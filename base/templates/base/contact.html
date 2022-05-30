@@ -1,0 +1,32 @@
+{% extends 'base/inner-page.html' %}
+
+{% block content %}
+
+ <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      
+      {% if message == 'sucess'%}
+      <h1>Thanks!</h1>
+      
+      
+      I appreciate that you’ve taken the time to write me. I will get back to you very soon.
+      <br>
+      Manuel Gil
+      
+      {% else %}
+      
+      <h1>Oh no!</h1>
+      
+      Something wrong happened. Please try again.
+      
+      <br>
+      Manuel Gil
+      
+      {% endif %}
+    </div>
+    </section><!-- End Breadcrumbs -->
+
+
+
+{% endblock %}
